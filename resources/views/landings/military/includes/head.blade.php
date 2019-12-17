@@ -1,19 +1,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-<title>Противоударные чехлы для телефонов Sasmsung | Extrasale.in.ua</title>
+<title>Противоударные чехлы для телефонов Sasmsung | Chexol.tlook.com.ua</title>
 <meta name="keywords" content="Камуфляжные чехлы для Samsung, Противоударные чехлы, Камуфляжные чехлы">
 <meta name="description" content="Чехол защитит смартфон от повреждений , а стильный дизайн сделает Ваш телефон по-настоящему мужским. Акция «1+1=3», приобретая 2 чехла, Вы получаете 3-й в подарок">
 <meta name="robots" content="noindex, FOLLOW">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="https://extrasale.in.ua/">
+<meta property="og:site_name" content="https://chexol.tlook.com.ua/">
 <meta property="og:title" content="Противоударные чехлы для телефонов Sasmsung | Extrasale.in.ua">
 <meta property="og:description" content="Чехол защитит смартфон от повреждений , а стильный дизайн сделает Ваш телефон по-настоящему мужским. Акция «1+1=3», приобретая 2 чехла, Вы получаете 3-й в подарок">
-<meta property="og:url" content="https://extrasale.in.ua/index.html">
+<meta property="og:url" content="{{Request::fullUrl()}}">
 <meta property="og:locale" content="ru_RU">
-<meta property="og:image" content="https://extrasale.in.ua/catalog/img/original/gallery/6.jpg">
-<meta property="og:image:width" content="271">
-<meta property="og:image:height" content="271">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102566183-8"></script>
 <script>
