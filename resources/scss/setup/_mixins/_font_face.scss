@@ -1,0 +1,25 @@
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $local-without-dash: '', $local-dash: '', $font-display: swap, $asset-pipeline: false , $version: '') {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+
+
+
+    @if $font-display != '' {
+      font-display: #{$font-display};
+    }
+
+    @if $version != '' {
+      $version: '?v=#{$version}';
+    }
+
+    @if $asset-pipeline == true {
+      src: local('#{$local-without-dash}'), local('#{$local-dash}'), font-url('#{$file-path}.eot');
+      src: local('#{$local-without-dash}'), local('#{$local-dash}'), font-url('#{$file-path}.eot?#{$version}iefix') format('embedded-opentype'), font-url('#{$file-path}.woff#{$version}') format('woff'), font-url('#{$file-path}.ttf#{$version}') format('truetype');
+    } @else {
+      src: local('#{$local-without-dash}'), local('#{$local-dash}'), url('#{$file-path}.eot');
+      src: local('#{$local-without-dash}'), local('#{$local-dash}'), url('#{$file-path}.eot#{$version}#iefix') format('embedded-opentype'), url('#{$file-path}.woff#{$version}') format('woff'), url('#{$file-path}.ttf#{$version}') format('truetype');
+    }
+  }
+}
