@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, FOLLOW">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="https://chexol.tlook.com.ua/">
-<meta property="og:title" content="Противоударные чехлы для телефонов Sasmsung | Extrasale.in.ua">
+<meta property="og:title" content="Противоударные чехлы для телефонов Sasmsung | Сhexol.tlook.com.ua">
 <meta property="og:description" content="Чехол защитит смартфон от повреждений , а стильный дизайн сделает Ваш телефон по-настоящему мужским. Акция «1+1=3», приобретая 2 чехла, Вы получаете 3-й в подарок">
 <meta property="og:url" content="{{Request::fullUrl()}}">
 <meta property="og:locale" content="ru_RU">
@@ -17,7 +17,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-102566183-8');
 </script>
 <!-- Facebook Pixel Code -->
@@ -33,7 +32,5 @@
   fbq('init', '1764971083589713');
   fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-               src="https://www.facebook.com/tr?id=1764971083589713&ev=PageView&noscript=1"
-  /></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1764971083589713&ev=PageView&noscript=1"/></noscript>
 <!-- End Facebook Pixel Code -->
