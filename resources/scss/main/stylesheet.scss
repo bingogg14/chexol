@@ -4,8 +4,6 @@
   padding: 0;
 }
 
-
-
 html, body, .wrapper {
   width: 100%;
   height: 100%;
@@ -34,11 +32,11 @@ body {
     min-height: 100%
   }
 
-  .main
-    main
-      .section__block
-        z-index: 2
-        button
+  .main {
+    main {
+      .section__block {
+        z-index: 2;
+        button {
           &.actions-entry {
             width: 100%;
             border-radius: 500px;
@@ -57,18 +55,20 @@ body {
               outline: none;
             }
           }
+
           &.actions-entry__buy {
+            font-family: 'Roboto';
+            font-weight: bold;
             margin-bottom: rem(3px);
             padding: rem(8px) rem(55px);
             font-size: rem(24px);
             letter-spacing: let(75px);
-            @include font-weight(RobotoBold);
           }
 
           &.actions-entry__item--green {
-            color: $h1_tag_light
-            background-color: $button__buy__color
-            border-bottom: rem(5px) solid darken($button__buy__color, 15%)
+            color: $h1_tag_light;
+            background-color: $button__buy__color;
+            border-bottom: rem(5px) solid darken($button__buy__color, 15%);
             @include box-shadow(0 rem(3px) rem(5px) 0  rgba(darken($button__buy__color, 15%), .25));
             &:hover,&:focus {
               background-color: lighten($button__buy__color, 15%);
@@ -84,194 +84,239 @@ body {
             }
 
           }
-
-        h2,h3,h4
-          @include font-weight(RobotoBold)
-          color: $default
-          letter-spacing: let(25px)
-        h2
-          font-size: rem(24px)
-        h3,h4
-          font-size: rem(18px)
-        p
-          color: $default
-          font-size: rem(14px)
-          letter-spacing: let(25px)
-          line-height: rem(24px)
-        button
+        }
+        h2,h3,h4 {
+          font-family: 'Roboto';
+          font-weight: bold;
+          color: $default;
+          letter-spacing: let(25px);
+        }
+        h2 {
+          font-size: rem(24px);
+        }
+        h3,h4 {
+          font-size: rem(18px);
+        }
+        p {
+          color: $default;
+          font-size: rem(14px);
+          letter-spacing: let(25px);
+          line-height: rem(24px);
+        }
         //Section 1
-        &.section__block__1
-          display: flex
-          flex-direction: column
-          justify-content: center
-          header.nav__top
-            padding-top: rem(38px)
-            .header__tel
-              text-align: right
-              &--about
-                display: block
-                color: #999
-              @include respond-to($tablet-portrait)
-                padding-right: 0
-              @include respond-to($tablet-landscape)
-                padding-right: 0
-              a
-                color: $text__light
-                font-size: rem(18px)
-                @include font-weight(RobotoBold)
-                letter-spacing: let(25px)
-                transition: all .25s ease-out
-                &:hover,&:focus
-                  color: lighten($text__light, 15%)
-                  text-decoration: none
-                  transition: all .25s ease-in
-                &:active
-                  color: darken($text__light, 35%)
-                  transition: all .05s ease-in
-          min-height: rem(600px)
-          header
-            h1
-              &.article__title
-                @include font-weight(RobotoBold)
-                font-size: rem(30px)
-                letter-spacing: let(25px)
-                line-height: rem(36px)
-                max-width: rem(470px)
-                color: $h1_tag_light
-                margin: rem(35px) 0 rem(40px) 0
-                @include respond-to($tablet-portrait)
-                  text-align: center
-                  width: 100%
-                  max-width: 100%
-          .box-offer
-            text-align: left
-            @include respond-to($tablet-portrait)
-              text-align: center
-              margin-top: rem(-50px)
-              margin-right: auto
-              margin-left: auto
-          p.article__content
-            @include font-weight(OpenSans)
-            font-size: rem(16px)
-            line-height: rem(24px)
-            color: $text__light
-            margin: rem(30px) 0 0 0
-            text-align: left
-            mark
-              color: $accent
-              background: transparent
-            @include respond-to($tablet-portrait)
-              &.fix__mobile
-                margin-top: rem(-50px)
-            @include respond-to($tablet-portrait)
-              text-align: center
-          form
-            margin-top: rem(25px)
-            input[type="text"]
-              display: block
-              border: 1px solid transparent
-              padding: rem(10px) 0 rem(10px) rem(20px)
-              background: $input_spo
-              background: rgba($input_spo, .5)
-              color: $text__light
-              margin: rem(15px) auto 0 auto
-              width: 100%
-              text-align: left
-              @include font-weight(RobotoBold)
-              font-size: rem(16px)
-              letter-spacing: let(75px)
-              transition: all .25s ease-out
-              @include respond-to($phone)
-                margin: rem(10px) auto 0 auto
-                padding-bottom: rem(11px)
-              @include respond-to($custom__fix)
-                margin: rem(10px) auto 0 auto
-              &.placeholder
-                color: $text__light
-              &:-moz-placeholder
-                color: $text__light
-              &::-moz-placeholder
-                color: $text__light
-              &::-webkit-input-placeholder
-               color: $text__light
-              &:hover
-                outline: none
-                border-bottom: rem(1px) solid rgba($accent, .65)
-                @include box-shadow(0 rem(3px) rem(5px) 0  rgba($accent, .15))
-                transition: all .25s ease-in
-              &:focus
-                outline: none
-                border-bottom: rem(1px) solid rgba($accent, .85)
-                @include box-shadow(0 rem(6px) rem(10px) 0  rgba($accent, .25))
-                transition: all .25s ease-in
-          button
-            font-size:  rem(21px)
-            @include respond-to($tablet-portrait)
-              font-size: rem(21px)
-          footer
-            padding-bottom: rem(120px)
-            p.product__price
-              @include respond-to($tablet-portrait)
+        &.section__block__1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: rem(600px);
+          header.nav__top {
+            padding-top: rem(38px);
+            .header__tel {
+              text-align: right;
+              &--about {
+                display: block;
+                color: #999;
+              }
+              @include respond-to($tablet-portrait) {
+                padding-right: 0;
+              }
+              @include respond-to($tablet-landscape) {
+                padding-right: 0;
+              }
+              a {
+                color: $text__light;
+                font-size: rem(18px);
+                font-family: 'Roboto';
+                font-weight: bold;
+                letter-spacing: let(25px);
+                transition: all .25s ease-out;
+                &:hover,&:focus {
+                  color: lighten($text__light, 15%);
+                  text-decoration: none;
+                  transition: all .25s ease-in;
+                }
+                &:active {
+                  color: darken($text__light, 35%);
+                  transition: all .05s ease-in;
+                }
+              }
+            }
+          }
+          header {
+            h1 {
+              &.article__title {
+                font-family: 'Roboto';
+                font-weight: bold;
+                font-size: rem(30px);
+                letter-spacing: let(25px);
+                line-height: rem(36px);
+                max-width: rem(470px);
+                color: $h1_tag_light;
+                margin: rem(35px) 0 rem(40px) 0;
+                @include respond-to($tablet-portrait) {
+                  text-align: center;
+                  width: 100%;
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+          .box-offer {
+            text-align: left;
+            @include respond-to($tablet-portrait) {
+              text-align: center;
+              margin-top: rem(-50px);
+              margin-right: auto;
+              margin-left: auto;
+            }
+          }
+          p.article__content {
+            font-family: 'Open Sans';
+            font-size: rem(16px);
+            line-height: rem(24px);
+            color: $text__light;
+            margin: rem(30px) 0 0 0;
+            text-align: left;
+            mark {
+              color: $accent;
+              background: transparent;
+            }
+            @include respond-to($tablet-portrait) {
+              &.fix__mobile {
+                margin-top: rem(-50px);
+              }
+            }
+            @include respond-to($tablet-portrait) {
+              text-align: center;
+            }
+          }
+          form {
+            margin-top: rem(25px);
+            input[type="text"] {
+              display: block;
+              border: 1px solid transparent;
+              padding: rem(10px) 0 rem(10px) rem(20px);
+              background: $input_spo;
+              background: rgba($input_spo, .5);
+              color: $text__light;
+              margin: rem(15px) auto 0 auto;
+              width: 100%;
+              text-align: left;
+              font-family: 'Roboto';
+              font-weight: bold;
+              font-size: rem(16px);
+              letter-spacing: let(75px);
+              transition: all .25s ease-out;
+              @include respond-to($phone) {
+                margin: rem(10px) auto 0 auto;
+                padding-bottom: rem(11px);
+              }
+              @include respond-to($custom__fix) {
+                margin: rem(10px) auto 0 auto;
+              }
+              &.placeholder, &:-moz-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+                color: $text__light;
+              }
+              &:hover {
+                outline: none;
+                border-bottom: rem(1px) solid rgba($accent, .65);
+                @include box-shadow(0 rem(3px) rem(5px) 0  rgba($accent, .15));
+                transition: all .25s ease-in;
+              }
+              &:focus {
+                outline: none;
+                border-bottom: rem(1px) solid rgba($accent, .85);
+                @include box-shadow(0 rem(6px) rem(10px) 0  rgba($accent, .25));
+                transition: all .25s ease-in;
+              }
+            }
+          }
+          button {
+            font-size:  rem(21px);
+            @include respond-to($tablet-portrait) {
+              font-size: rem(21px);
+            }
+          }
+          footer {
+            padding-bottom: rem(120px);
+            p.product__price {
+              @include respond-to($tablet-portrait) {
                 text-align: center
-              margin: rem(25px) 0 0 0
-              color: $text__light
-              font-size: rem(24px)
-              position: relative
-              text-align: left
-              mark
-                @include font-weight(RobotoBold)
-                font-size: rem(30px)
-                letter-spacing: let(50px)
-                color: $h1_tag_light
-                margin-left: rem(7px)
-                background: transparent
-                span
-                  font-size: rem(18px)
-                  letter-spacing: let(-10px)
-                  margin-left: rem(5px)
-              span.old-price
-                color: darken($text__light, 15%)
-                position: absolute
-                top: rem(-14px)
-                text-decoration: line-through
-                text-decoration-color: red
-                padding-left: rem(5px)
-                span
-                  font-size: rem(18px)
-                  letter-spacing: let(-10px)
-                  margin-left: rem(5px)
-            p.article__desc
-              font-size: rem(12px)
-              line-height: rem(24px)
-              color: $text__light
-              margin: rem(15px) 0 0 0
-              @include respond-to($tablet-portrait)
-                margin: rem(15px) auto 0 auto
-              text-align: center
-          figure
-            margin-top: rem(-50px)
-            @include respond-to($tablet-landscape)
+              }
+              margin: rem(25px) 0 0 0;
+              color: $text__light;
+              font-size: rem(24px);
+              position: relative;
+              text-align: left;
+              mark {
+                font-family: 'Roboto';
+                font-weight: bold;
+                font-size: rem(30px);
+                letter-spacing: let(50px);
+                color: $h1_tag_light;
+                margin-left: rem(7px);
+                background: transparent;
+                span {
+                  font-size: rem(18px);
+                  letter-spacing: let(-10px);
+                  margin-left: rem(5px);
+                }
+              }
+              span.old-price {
+                color: darken($text__light, 15%);
+                position: absolute;
+                top: rem(-14px);
+                text-decoration: line-through;
+                text-decoration-color: red;
+                padding-left: rem(5px);
+                span {
+                  font-size: rem(18px);
+                  letter-spacing: let(-10px);
+                  margin-left: rem(5px);
+                }
+              }
+            }
+            p.article__desc {
+              font-size: rem(12px);
+              line-height: rem(24px);
+              color: $text__light;
+              margin: rem(15px) 0 0 0;
+              @include respond-to($tablet-portrait) {
+                margin: rem(15px) auto 0 auto;
+              }
+              text-align: center;
+            }
+          }
+          figure {
+            margin-top: rem(-50px);
+            @include respond-to($tablet-landscape) {
               display: inline-block;
               height: 100%;
               vertical-align: middle;
-              margin-top: 0
-              img
-                width: 135% !important
-                margin-left: -25%
-            @include respond-to($large-desktop)nav__top
-              margin-top: rem(-100px)
-            @include respond-to($tablet-portrait)
-              text-align: center
-              img
-                width: 75%
-                margin: 0 auto
-            img {
-              @include respond-to($phone) {
-                width: 100%
+              margin-top: 0;
+              img {
+                width: 135% !important;
+                margin-left: -25%;
+              }
+            }
+            @include respond-to($large-desktop) {
+              margin-top: rem(-100px);
+            }
+            @include respond-to($tablet-portrait) {
+              text-align: center;
+              img {
+                width: 75%;
+                margin: 0 auto;
               }
             }
 
-
+            img {
+              @include respond-to($phone) {
+                width: 100%;
+              }
+            }
+          }
+        }
         &.section__block_bg__img {
           background: url(../img/bg/bg__img__desktop.jpg) center / cover no-repeat;
           position: relative;
@@ -287,13 +332,15 @@ body {
             height: 100%;
             background: rgba(0,0,0,0.85);
           }
-
           @include respond-to($tablet-portrait) {
               background: url(../img/bg/bg__img__tablet.jpg) center / cover no-repeat;
           }
           @include respond-to($phone) {
               background: url(../img/bg/bg__img__mobile.jpg) center / cover no-repeat;
           }
+      }
+    }
+  }
 }
 #clockdiv {
   padding-top: rem(15px);
