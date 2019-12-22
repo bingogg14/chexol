@@ -85,7 +85,7 @@ function SetTimer () {
     deadline = new Date(currentTime + timeInMinutes * 60 * 1000),
     deadlineEnd = new Date(currentTime + (timeInMinutes + 1) * 60 * 1000);
 
-  $.cookie('myClock', deadline, { expires: deadlineEnd });
+  //$.cookie('myClock', deadline, { expires: deadlineEnd });
   return deadline
 }
 
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function(){ // Аналог $(docu
   // if there's a cookie with the name myClock, use that value as the deadline
   if (document.cookie && document.cookie.match('myClock')) {
     // get deadline value from cookie
-    var deadline = $.cookie('myClock')
+    var deadline = '';//$.cookie('myClock')
   }
 
   // otherwise, set a deadline 10 minutes from now and
@@ -105,5 +105,5 @@ document.addEventListener('DOMContentLoaded', function(){ // Аналог $(docu
 
   initializeClock('clockdiv', deadline);
   // eslint-disable-next-line no-undef
-  $('.phone').inputmask('+38 (099) 999-99-99')
+  //$('.phone').inputmask('+38 (099) 999-99-99')
 });
