@@ -1,14 +1,13 @@
 //helpers
-@import "setup/variables.scss";
-@import "setup/functions.scss";
-@import "setup/mixins.scss";
-@import "setup/fonts.scss";
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
+@import "setup/fonts";
 
 
 //libs
-//Todo:: add bootstrap
-
+@import "plugins/bootstrap_grid_3";
 
 //main
-@import "main/stylesheet.scss";
+@import "main/stylesheet";
 
